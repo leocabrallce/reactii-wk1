@@ -22,7 +22,7 @@ async function getMovies(): Promise<MovieType[]> {
 
 export default async function Home() {
   const movies = await getMovies();
-  console.log(movies);
+
   return (
     <main className="px-8 bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
